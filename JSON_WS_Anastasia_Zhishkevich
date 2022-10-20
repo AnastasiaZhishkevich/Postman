@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "57d76450-ff3e-4a96-8fa5-398231abfc07",
+		"name": "WS_Anastasia Zhishkevich",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"\",\"strict\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request with full username",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"berta\",\"strict\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Request with partial username",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"jo\",\"strict\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Non-existent user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":\"ffjghgjhg\",\"strict\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid value in parameter 'user'",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":123,\"strict\": true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "invalid value in parameter 'strict'",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\" : \"a\", \"strict\" : 555}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://178.124.206.46:8001/app/ws/",
+					"protocol": "http",
+					"host": [
+						"178",
+						"124",
+						"206",
+						"46"
+					],
+					"port": "8001",
+					"path": [
+						"app",
+						"ws",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
