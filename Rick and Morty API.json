@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "26c092f9-7676-431a-af8c-e372554118cc",
+		"name": "Rick and Morty API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Characters",
+			"item": [
+				{
+					"name": "All characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Characters on page 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/?page=3",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Character with id 15",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/15",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/15,19,105,210",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								"15,19,105,210"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alive characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/?status=alive",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "alive"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alive femail characters",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/?status=alive&gender=female",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								""
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "alive"
+								},
+								{
+									"key": "gender",
+									"value": "female"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dead Morty",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/?name=morty&status=dead",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "morty"
+								},
+								{
+									"key": "status",
+									"value": "dead"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Genderless humanoids",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/character/?species=humanoid&gender=genderless",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"character",
+								""
+							],
+							"query": [
+								{
+									"key": "species",
+									"value": "humanoid"
+								},
+								{
+									"key": "gender",
+									"value": "genderless"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Locations",
+			"item": [
+				{
+					"name": "All locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Location 113",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location/113",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location",
+								"113"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All planets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location/?type=planet",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location",
+								""
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "planet"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Locations on page 7",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location/?page=7",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple locations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location/17,55,14,99",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location",
+								"17,55,14,99"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All replacement dimension",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/location/?dimension=replacement dimension",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"location",
+								""
+							],
+							"query": [
+								{
+									"key": "dimension",
+									"value": "replacement dimension"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Episodes",
+			"item": [
+				{
+					"name": "All episodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Episode with id 33",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode/33",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode",
+								"33"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Multiple episodes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode/9,11,47",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode",
+								"9,11,47"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pilot episode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode/?name=pilot",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pilot"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Episodes on page 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode/?page=3",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Episode with code S05E01",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://rickandmortyapi.com/api/episode/?episode=S05E05",
+							"protocol": "https",
+							"host": [
+								"rickandmortyapi",
+								"com"
+							],
+							"path": [
+								"api",
+								"episode",
+								""
+							],
+							"query": [
+								{
+									"key": "episode",
+									"value": "S05E05"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
